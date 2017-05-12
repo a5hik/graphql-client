@@ -1,3 +1,5 @@
-<h1>
-  {{title}}
-</h1>
+<h1>Users</h1>
+<button (click)="createRandomUser()">Push random</button>
+<ul>
+  <li *ngFor="let user of users | async">{{user.firstName}}</li>
+</ul>
